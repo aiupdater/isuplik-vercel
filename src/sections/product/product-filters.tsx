@@ -53,7 +53,7 @@ export function ProductFilters({
   onOpenFilter,
   onCloseFilter,
   onResetFilter,
-}: ProductFiltryProps) {
+}: ProductFiltersProps) {
   const renderGender = (
     <Stack spacing={1}>
       <Typography variant="subtitle2">Pohlaví</Typography>
