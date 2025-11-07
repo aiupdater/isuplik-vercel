@@ -18,24 +18,24 @@ import type { FiltersProps } from '../product-filters';
 // ----------------------------------------------------------------------
 
 const GENDER_OPTIONS = [
-  { value: 'men', label: 'Men' },
-  { value: 'women', label: 'Women' },
-  { value: 'kids', label: 'Kids' },
+  { value: 'men', label: 'Muži' },
+  { value: 'women', label: 'Ženy' },
+  { value: 'kids', label: 'Děti' },
 ];
 
 const CATEGORY_OPTIONS = [
-  { value: 'all', label: 'All' },
-  { value: 'shose', label: 'Shose' },
-  { value: 'apparel', label: 'Apparel' },
-  { value: 'accessories', label: 'Accessories' },
+  { value: 'all', label: 'Vše' },
+  { value: 'shose', label: 'Boty' },
+  { value: 'apparel', label: 'Oblečení' },
+  { value: 'accessories', label: 'Doplňky' },
 ];
 
 const RATING_OPTIONS = ['up4Star', 'up3Star', 'up2Star', 'up1Star'];
 
 const PRICE_OPTIONS = [
-  { value: 'below', label: 'Below $25' },
-  { value: 'between', label: 'Between $25 - $75' },
-  { value: 'above', label: 'Above $75' },
+  { value: 'below', label: 'Pod $25' },
+  { value: 'between', label: 'Mezi $25–$75' },
+  { value: 'above', label: 'Nad $75' },
 ];
 
 const COLOR_OPTIONS = [
@@ -129,10 +129,10 @@ export function ProductsView() {
             sortBy={sortBy}
             onSort={handleSort}
             options={[
-              { value: 'featured', label: 'Featured' },
-              { value: 'newest', label: 'Newest' },
-              { value: 'priceDesc', label: 'Price: High-Low' },
-              { value: 'priceAsc', label: 'Price: Low-High' },
+              { value: 'featured', label: 'Doporučené' },
+              { value: 'newest', label: 'Nejnovější' },
+              { value: 'priceDesc', label: 'Cena: od nejvyšší' },
+              { value: 'priceAsc', label: 'Cena: od nejnižší' },
             ]}
           />
         </Box>
