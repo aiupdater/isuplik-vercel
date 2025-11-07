@@ -101,17 +101,17 @@ export const _products = [...Array(24)].map((_, index) => {
 export const _langs = [
   {
     value: 'en',
-    label: 'English',
+    label: 'Angličtina',
     icon: '/assets/icons/flags/ic-flag-en.svg',
   },
   {
     value: 'de',
-    label: 'German',
+    label: 'Němčina',
     icon: '/assets/icons/flags/ic-flag-de.svg',
   },
   {
     value: 'fr',
-    label: 'French',
+    label: 'Francouzština',
     icon: '/assets/icons/flags/ic-flag-fr.svg',
   },
 ];
@@ -121,11 +121,11 @@ export const _langs = [
 export const _timeline = [...Array(5)].map((_, index) => ({
   id: _id(index),
   title: [
-    '1983, orders, $4220',
-    '12 Invoices have been paid',
-    'Order #37745 from September',
-    'New order placed #XF-2356',
-    'New order placed #XF-2346',
+    '1983, objednávky, $4220',
+    '12 faktur bylo zaplaceno',
+    'Objednávka #37745 ze září',
+    'Vytvořena nová objednávka #XF-2356',
+    'Vytvořena nová objednávka #XF-2346',
   ][index],
   type: `order${index + 1}`,
   time: _times(index),
@@ -164,8 +164,8 @@ export const _tasks = Array.from({ length: 5 }, (_, index) => ({
 export const _notifications = [
   {
     id: _id(1),
-    title: 'Your order is placed',
-    description: 'waiting for shipping',
+    title: 'Vaše objednávka byla vytvořena',
+    description: 'čeká na odeslání',
     avatarUrl: null,
     type: 'order-placed',
     postedAt: _times(1),
@@ -174,7 +174,7 @@ export const _notifications = [
   {
     id: _id(2),
     title: _fullName(2),
-    description: 'answered to your comment on the Minimal',
+    description: 'odpověděl(a) na váš komentář u Minimal',
     avatarUrl: '/assets/images/avatar/avatar-2.webp',
     type: 'friend-interactive',
     postedAt: _times(2),
@@ -182,8 +182,8 @@ export const _notifications = [
   },
   {
     id: _id(3),
-    title: 'You have new message',
-    description: '5 unread messages',
+    title: 'Máte novou zprávu',
+    description: '5 nepřečtených zpráv',
     avatarUrl: null,
     type: 'chat-message',
     postedAt: _times(3),
@@ -191,8 +191,8 @@ export const _notifications = [
   },
   {
     id: _id(4),
-    title: 'You have new mail',
-    description: 'sent from Guido Padberg',
+    title: 'Máte nový e-mail',
+    description: 'odesláno od Guido Padberg',
     avatarUrl: null,
     type: 'mail',
     postedAt: _times(4),
@@ -200,8 +200,8 @@ export const _notifications = [
   },
   {
     id: _id(5),
-    title: 'Delivery processing',
-    description: 'Your order is being shipped',
+    title: 'Zpracování doručení',
+    description: 'Vaše objednávka je odesílána',
     avatarUrl: null,
     type: 'order-shipped',
     postedAt: _times(5),
