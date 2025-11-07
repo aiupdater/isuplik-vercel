@@ -16,7 +16,7 @@ import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
-export function Hledatbar({ sx, ...other }: BoxProps) {
+export function Searchbar({ sx, ...other }: BoxProps) {
   const theme = useTheme();
 
   const [open, setOpen] = useState(false);
