@@ -19,7 +19,7 @@ import { ColorPicker } from 'src/components/color-utils';
 
 // ----------------------------------------------------------------------
 
-export type FiltryProps = {
+export type FiltersProps = {
   price: string;
   rating: string;
   gender: string[];
