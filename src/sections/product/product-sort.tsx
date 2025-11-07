@@ -43,7 +43,7 @@ export function ProductSort({ options, sortBy, onSort, sx, ...other }: ProductSo
         sx={sx}
         {...other}
       >
-        Sort By:&nbsp;
+        Řadit podle:&nbsp;
         <Typography component="span" variant="subtitle2" sx={{ color: 'text.secondary' }}>
           {options.find((option) => option.value === sortBy)?.label}
         </Typography>

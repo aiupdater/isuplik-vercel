@@ -35,7 +35,7 @@ export function SignInView() {
       <TextField
         fullWidth
         name="email"
-        label="Email address"
+        label="E-mailová adresa"
         defaultValue="hello@gmail.com"
         sx={{ mb: 3 }}
         slotProps={{
@@ -44,13 +44,13 @@ export function SignInView() {
       />
 
       <Link variant="body2" color="inherit" sx={{ mb: 1.5 }}>
-        Forgot password?
+        Zapomněli jste heslo?
       </Link>
 
       <TextField
         fullWidth
         name="password"
-        label="Password"
+        label="Heslo"
         defaultValue="@demo1234"
         type={showPassword ? 'text' : 'password'}
         slotProps={{
@@ -76,7 +76,7 @@ export function SignInView() {
         variant="contained"
         onClick={handleSignIn}
       >
-        Sign in
+        Přihlásit se
       </Button>
     </Box>
   );
@@ -92,16 +92,16 @@ export function SignInView() {
           mb: 5,
         }}
       >
-        <Typography variant="h5">Sign in</Typography>
+        <Typography variant="h5">Přihlášení</Typography>
         <Typography
           variant="body2"
           sx={{
             color: 'text.secondary',
           }}
         >
-          Don’t have an account?
+          Nemáte účet?
           <Link variant="subtitle2" sx={{ ml: 0.5 }}>
-            Get started
+            Začít
           </Link>
         </Typography>
       </Box>
@@ -111,7 +111,7 @@ export function SignInView() {
           variant="overline"
           sx={{ color: 'text.secondary', fontWeight: 'fontWeightMedium' }}
         >
-          OR
+          NEBO
         </Typography>
       </Divider>
       <Box

@@ -20,18 +20,18 @@ export function OverviewAnalyticsView() {
   return (
     <DashboardContent maxWidth="xl">
       <Typography variant="h4" sx={{ mb: { xs: 3, md: 5 } }}>
-        Hi, Welcome back 👋
+        Ahoj, vítej zpět 👋
       </Typography>
 
       <Grid container spacing={3}>
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <AnalyticsWidgetSummary
-            title="Weekly sales"
+            title="Týdenní prodeje"
             percent={2.6}
             total={714000}
-            icon={<img alt="Weekly sales" src="/assets/icons/glass/ic-glass-bag.svg" />}
+            icon={<img alt="Týdenní prodeje" src="/assets/icons/glass/ic-glass-bag.svg" />}
             chart={{
-              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+              categories: ['Led', 'Úno', 'Bře', 'Dub', 'Kvě', 'Čvn', 'Čvc', 'Srp'],
               series: [22, 8, 35, 50, 82, 84, 77, 12],
             }}
           />
@@ -39,13 +39,13 @@ export function OverviewAnalyticsView() {
 
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <AnalyticsWidgetSummary
-            title="New users"
+            title="Noví uživatelé"
             percent={-0.1}
             total={1352831}
             color="secondary"
-            icon={<img alt="New users" src="/assets/icons/glass/ic-glass-users.svg" />}
+            icon={<img alt="Noví uživatelé" src="/assets/icons/glass/ic-glass-users.svg" />}
             chart={{
-              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+              categories: ['Led', 'Úno', 'Bře', 'Dub', 'Kvě', 'Čvn', 'Čvc', 'Srp'],
               series: [56, 47, 40, 62, 73, 30, 23, 54],
             }}
           />
@@ -53,13 +53,13 @@ export function OverviewAnalyticsView() {
 
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <AnalyticsWidgetSummary
-            title="Purchase orders"
+            title="Nákupní objednávky"
             percent={2.8}
             total={1723315}
             color="warning"
-            icon={<img alt="Purchase orders" src="/assets/icons/glass/ic-glass-buy.svg" />}
+            icon={<img alt="Nákupní objednávky" src="/assets/icons/glass/ic-glass-buy.svg" />}
             chart={{
-              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+              categories: ['Led', 'Úno', 'Bře', 'Dub', 'Kvě', 'Čvn', 'Čvc', 'Srp'],
               series: [40, 70, 50, 28, 70, 75, 7, 64],
             }}
           />
@@ -67,13 +67,13 @@ export function OverviewAnalyticsView() {
 
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <AnalyticsWidgetSummary
-            title="Messages"
+            title="Zprávy"
             percent={3.6}
             total={234}
             color="error"
-            icon={<img alt="Messages" src="/assets/icons/glass/ic-glass-message.svg" />}
+            icon={<img alt="Zprávy" src="/assets/icons/glass/ic-glass-message.svg" />}
             chart={{
-              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+              categories: ['Led', 'Úno', 'Bře', 'Dub', 'Kvě', 'Čvn', 'Čvc', 'Srp'],
               series: [56, 30, 23, 54, 47, 40, 62, 73],
             }}
           />
@@ -81,7 +81,7 @@ export function OverviewAnalyticsView() {
 
         <Grid size={{ xs: 12, md: 6, lg: 4 }}>
           <AnalyticsCurrentVisits
-            title="Current visits"
+            title="Aktuální návštěvy"
             chart={{
               series: [
                 { label: 'America', value: 3500 },
@@ -95,13 +95,13 @@ export function OverviewAnalyticsView() {
 
         <Grid size={{ xs: 12, md: 6, lg: 8 }}>
           <AnalyticsWebsiteVisits
-            title="Website visits"
-            subheader="(+43%) than last year"
+            title="Návštěvnost webu"
+            subheader="(+43 %) oproti loňsku"
             chart={{
-              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+              categories: ['Led', 'Úno', 'Bře', 'Dub', 'Kvě', 'Čvn', 'Čvc', 'Srp', 'Zář'],
               series: [
-                { name: 'Team A', data: [43, 33, 22, 37, 67, 68, 37, 24, 55] },
-                { name: 'Team B', data: [51, 70, 47, 67, 40, 37, 24, 70, 24] },
+                { name: 'Tým A', data: [43, 33, 22, 37, 67, 68, 37, 24, 55] },
+                { name: 'Tým B', data: [51, 70, 47, 67, 40, 37, 24, 70, 24] },
               ],
             }}
           />
@@ -109,8 +109,8 @@ export function OverviewAnalyticsView() {
 
         <Grid size={{ xs: 12, md: 6, lg: 8 }}>
           <AnalyticsConversionRates
-            title="Conversion rates"
-            subheader="(+43%) than last year"
+            title="Míra konverze"
+            subheader="(+43 %) oproti loňsku"
             chart={{
               categories: ['Italy', 'Japan', 'China', 'Canada', 'France'],
               series: [
@@ -123,32 +123,32 @@ export function OverviewAnalyticsView() {
 
         <Grid size={{ xs: 12, md: 6, lg: 4 }}>
           <AnalyticsCurrentSubject
-            title="Current subject"
+            title="Aktuální předmět"
             chart={{
-              categories: ['English', 'History', 'Physics', 'Geography', 'Chinese', 'Math'],
+              categories: ['Angličtina', 'Dějepis', 'Fyzika', 'Zeměpis', 'Čínština', 'Matematika'],
               series: [
-                { name: 'Series 1', data: [80, 50, 30, 40, 100, 20] },
-                { name: 'Series 2', data: [20, 30, 40, 80, 20, 80] },
-                { name: 'Series 3', data: [44, 76, 78, 13, 43, 10] },
+                { name: 'Řada 1', data: [80, 50, 30, 40, 100, 20] },
+                { name: 'Řada 2', data: [20, 30, 40, 80, 20, 80] },
+                { name: 'Řada 3', data: [44, 76, 78, 13, 43, 10] },
               ],
             }}
           />
         </Grid>
 
         <Grid size={{ xs: 12, md: 6, lg: 8 }}>
-          <AnalyticsNews title="News" list={_posts.slice(0, 5)} />
+          <AnalyticsNews title="Novinky" list={_posts.slice(0, 5)} />
         </Grid>
 
         <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-          <AnalyticsOrderTimeline title="Order timeline" list={_timeline} />
+          <AnalyticsOrderTimeline title="Časová osa objednávek" list={_timeline} />
         </Grid>
 
         <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-          <AnalyticsTrafficBySite title="Traffic by site" list={_traffic} />
+          <AnalyticsTrafficBySite title="Návštěvnost podle webu" list={_traffic} />
         </Grid>
 
         <Grid size={{ xs: 12, md: 6, lg: 8 }}>
-          <AnalyticsTasks title="Tasks" list={_tasks} />
+          <AnalyticsTasks title="Úkoly" list={_tasks} />
         </Grid>
       </Grid>
     </DashboardContent>

@@ -34,11 +34,11 @@ export function NavUpgrade({ sx, ...other }: StackProps) {
           }),
         ]}
       >
-        More features?
+        Více funkcí?
       </Typography>
 
       <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
-        {`From only `}
+        {`Již od `}
         <Box component="strong" sx={{ color: 'text.primary' }}>
           $69
         </Box>
@@ -57,7 +57,7 @@ export function NavUpgrade({ sx, ...other }: StackProps) {
         variant="contained"
         color="inherit"
       >
-        Upgrade to Pro
+        Přejít na Pro
       </Button>
     </Box>
   );
