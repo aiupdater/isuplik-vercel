@@ -56,7 +56,7 @@ export function ProductFiltry({
 }: ProductFiltryProps) {
   const renderGender = (
     <Stack spacing={1}>
-      <Typography variant="subtitle2">Gender</Typography>
+      <Typography variant="subtitle2">Pohlaví</Typography>
       <FormGroup>
         {options.genders.map((option) => (
           <FormControlLabel
@@ -82,7 +82,7 @@ export function ProductFiltry({
 
   const renderCategory = (
     <Stack spacing={1}>
-      <Typography variant="subtitle2">Category</Typography>
+      <Typography variant="subtitle2">Kategorie</Typography>
       <RadioGroup>
         {options.categories.map((option) => (
           <FormControlLabel
@@ -103,7 +103,7 @@ export function ProductFiltry({
 
   const renderColors = (
     <Stack spacing={1}>
-      <Typography variant="subtitle2">Colors</Typography>
+      <Typography variant="subtitle2">Barvy</Typography>
       <ColorPicker
         options={options.colors}
         value={filters.colors}
@@ -115,7 +115,7 @@ export function ProductFiltry({
 
   const renderPrice = (
     <Stack spacing={1}>
-      <Typography variant="subtitle2">Price</Typography>
+      <Typography variant="subtitle2">Cena</Typography>
       <RadioGroup>
         {options.price.map((option) => (
           <FormControlLabel
@@ -137,7 +137,7 @@ export function ProductFiltry({
   const renderRating = (
     <Stack spacing={1}>
       <Typography variant="subtitle2" sx={{ mb: 2 }}>
-        Rating
+        Hodnocení
       </Typography>
 
       {options.ratings.map((option, index) => (
@@ -160,7 +160,7 @@ export function ProductFiltry({
             }),
           }}
         >
-          <Rating readOnly value={4 - index} /> & Up
+          <Rating readOnly value={4 - index} /> a více
         </Box>
       ))}
     </Stack>
