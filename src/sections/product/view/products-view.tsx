@@ -49,7 +49,7 @@ const COLOR_OPTIONS = [
   '#FFC107',
 ];
 
-const defaultFilters = {
+const defaultFilters: FiltersProps = {
   price: '',
   gender: [GENDER_OPTIONS[0].value],
   colors: [COLOR_OPTIONS[4]],
