@@ -148,7 +148,7 @@ export function OverviewAnalyticsView() {
         </Grid>
 
         <Grid size={{ xs: 12, md: 6, lg: 8 }}>
-          <AnalyticsTasks title="Tasks" list={_tasks} />
+          <AnalyticsTasks title="Úkoly" list={_tasks} />
         </Grid>
       </Grid>
     </DashboardContent>
