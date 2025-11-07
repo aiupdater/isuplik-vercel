@@ -27,14 +27,14 @@ export type FiltersProps = {
   category: string;
 };
 
-type ProductFiltryProps = {
+type ProductFiltersProps = {
   canReset: boolean;
   openFilter: boolean;
-  filters: FiltryProps;
+  filters: FiltersProps;
   onOpenFilter: () => void;
   onCloseFilter: () => void;
   onResetFilter: () => void;
-  onSetFiltry: (updateState: Partial<FiltryProps>) => void;
+  onSetFilters: (updateState: Partial<FiltersProps>) => void;
   options: {
     colors: string[];
     ratings: string[];
@@ -44,12 +44,12 @@ type ProductFiltryProps = {
   };
 };
 
-export function ProductFiltry({
+export function ProductFilters({
   filters,
   options,
   canReset,
   openFilter,
-  onSetFiltry,
+  onSetFilters,
   onOpenFilter,
   onCloseFilter,
   onResetFilter,
@@ -69,7 +69,7 @@ export function ProductFiltry({
                     ? filters.gender.filter((value) => value !== option.value)
                     : [...filters.gender, option.value];
 
-                  onSetFiltry({ gender: checked });
+                  onSetFilters({ gender: checked });
                 }}
               />
             }
@@ -91,7 +91,7 @@ export function ProductFiltry({
             control={
               <Radio
                 checked={filters.category.includes(option.value)}
-                onChange={() => onSetFiltry({ category: option.value })}
+                onChange={() => onSetFilters({ category: option.value })}
               />
             }
             label={option.label}
@@ -107,7 +107,7 @@ export function ProductFiltry({
       <ColorPicker
         options={options.colors}
         value={filters.colors}
-        onChange={(colors) => onSetFiltry({ colors: colors as string[] })}
+        onChange={(colors) => onSetFilters({ colors: colors as string[] })}
         limit={6}
       />
     </Stack>
@@ -124,7 +124,7 @@ export function ProductFiltry({
             control={
               <Radio
                 checked={filters.price.includes(option.value)}
-                onChange={() => onSetFiltry({ price: option.value })}
+                onChange={() => onSetFilters({ price: option.value })}
               />
             }
             label={option.label}
@@ -143,7 +143,7 @@ export function ProductFiltry({
       {options.ratings.map((option, index) => (
         <Box
           key={option}
-          onClick={() => onSetFiltry({ rating: option })}
+          onClick={() => onSetFilters({ rating: option })}
           sx={{
             mb: 1,
             gap: 1,
