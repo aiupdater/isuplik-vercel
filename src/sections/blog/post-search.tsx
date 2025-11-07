@@ -38,7 +38,7 @@ export function PostSearch({ posts, sx }: PostSearchProps) {
       renderInput={(params) => (
         <TextField
           {...params}
-          placeholder="Search post..."
+          placeholder="Hledat příspěvek..."
           slotProps={{
             input: {
               ...params.InputProps,
