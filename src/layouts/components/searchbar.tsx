@@ -16,7 +16,7 @@ import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
-export function Searchbar({ sx, ...other }: BoxProps) {
+export function Hledatbar({ sx, ...other }: BoxProps) {
   const theme = useTheme();
 
   const [open, setOpen] = useState(false);
@@ -65,7 +65,7 @@ export function Searchbar({ sx, ...other }: BoxProps) {
               autoFocus
               fullWidth
               disableUnderline
-              placeholder="Search…"
+              placeholder="Hledat…"
               startAdornment={
                 <InputAdornment position="start">
                   <Iconify width={20} icon="eva:search-fill" sx={{ color: 'text.disabled' }} />
@@ -74,7 +74,7 @@ export function Searchbar({ sx, ...other }: BoxProps) {
               sx={{ fontWeight: 'fontWeightBold' }}
             />
             <Button variant="contained" onClick={handleClose}>
-              Search
+              Hledat
             </Button>
           </Box>
         </Slide>
