@@ -46,7 +46,7 @@ export function BlogView({ posts }: Props) {
           color="inherit"
           startIcon={<Iconify icon="mingcute:add-line" />}
         >
-          New post
+          Nový příspěvek
         </Button>
       </Box>
 
@@ -63,9 +63,9 @@ export function BlogView({ posts }: Props) {
           sortBy={sortBy}
           onSort={handleSort}
           options={[
-            { value: 'latest', label: 'Latest' },
-            { value: 'popular', label: 'Popular' },
-            { value: 'oldest', label: 'Oldest' },
+            { value: 'latest', label: 'Nejnovější' },
+            { value: 'popular', label: 'Populární' },
+            { value: 'oldest', label: 'Nejstarší' },
           ]}
         />
       </Box>
