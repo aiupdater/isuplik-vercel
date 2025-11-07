@@ -87,7 +87,7 @@ export function LanguagePopover({ data = [], sx, ...other }: LanguagePopoverProp
   return (
     <>
       <IconButton
-        aria-label="Languages button"
+        aria-label="Výběr jazyka"
         onClick={onOpen}
         sx={[
           (theme) => ({
