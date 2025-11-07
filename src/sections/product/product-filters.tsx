@@ -19,7 +19,7 @@ import { ColorPicker } from 'src/components/color-utils';
 
 // ----------------------------------------------------------------------
 
-export type FiltersProps = {
+export type FiltryProps = {
   price: string;
   rating: string;
   gender: string[];
@@ -27,14 +27,14 @@ export type FiltersProps = {
   category: string;
 };
 
-type ProductFiltersProps = {
+type ProductFiltryProps = {
   canReset: boolean;
   openFilter: boolean;
-  filters: FiltersProps;
+  filters: FiltryProps;
   onOpenFilter: () => void;
   onCloseFilter: () => void;
   onResetFilter: () => void;
-  onSetFilters: (updateState: Partial<FiltersProps>) => void;
+  onSetFiltry: (updateState: Partial<FiltryProps>) => void;
   options: {
     colors: string[];
     ratings: string[];
@@ -44,16 +44,16 @@ type ProductFiltersProps = {
   };
 };
 
-export function ProductFilters({
+export function ProductFiltry({
   filters,
   options,
   canReset,
   openFilter,
-  onSetFilters,
+  onSetFiltry,
   onOpenFilter,
   onCloseFilter,
   onResetFilter,
-}: ProductFiltersProps) {
+}: ProductFiltryProps) {
   const renderGender = (
     <Stack spacing={1}>
       <Typography variant="subtitle2">Gender</Typography>
@@ -69,7 +69,7 @@ export function ProductFilters({
                     ? filters.gender.filter((value) => value !== option.value)
                     : [...filters.gender, option.value];
 
-                  onSetFilters({ gender: checked });
+                  onSetFiltry({ gender: checked });
                 }}
               />
             }
@@ -91,7 +91,7 @@ export function ProductFilters({
             control={
               <Radio
                 checked={filters.category.includes(option.value)}
-                onChange={() => onSetFilters({ category: option.value })}
+                onChange={() => onSetFiltry({ category: option.value })}
               />
             }
             label={option.label}
@@ -107,7 +107,7 @@ export function ProductFilters({
       <ColorPicker
         options={options.colors}
         value={filters.colors}
-        onChange={(colors) => onSetFilters({ colors: colors as string[] })}
+        onChange={(colors) => onSetFiltry({ colors: colors as string[] })}
         limit={6}
       />
     </Stack>
@@ -124,7 +124,7 @@ export function ProductFilters({
             control={
               <Radio
                 checked={filters.price.includes(option.value)}
-                onChange={() => onSetFilters({ price: option.value })}
+                onChange={() => onSetFiltry({ price: option.value })}
               />
             }
             label={option.label}
@@ -143,7 +143,7 @@ export function ProductFilters({
       {options.ratings.map((option, index) => (
         <Box
           key={option}
-          onClick={() => onSetFilters({ rating: option })}
+          onClick={() => onSetFiltry({ rating: option })}
           sx={{
             mb: 1,
             gap: 1,
@@ -178,7 +178,7 @@ export function ProductFilters({
         }
         onClick={onOpenFilter}
       >
-        Filters
+        Filtry
       </Button>
 
       <Drawer
@@ -201,7 +201,7 @@ export function ProductFilters({
           }}
         >
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Filters
+            Filtry
           </Typography>
 
           <IconButton onClick={onResetFilter}>
