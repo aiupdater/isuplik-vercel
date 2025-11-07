@@ -29,7 +29,8 @@ export function NotFoundView() {
         </Typography>
 
         <Typography sx={{ color: 'text.secondary', maxWidth: 480, textAlign: 'center' }}>
-          Omlouváme se, stránku, kterou hledáte, se nepodařilo najít. Možná jste zadali špatnou adresu URL? Prosím, zkontrolujte pravopis.
+          Omlouváme se, stránku, kterou hledáte, se nepodařilo najít. Možná jste zadali špatnou
+          adresu URL? Prosím, zkontrolujte pravopis.
         </Typography>
 
         <Box
